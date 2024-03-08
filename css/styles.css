@@ -318,7 +318,7 @@ img {
 
 .testimonios{
   background-color: var(--primario);
-  padding: 5rem 0;
+  padding: 5rem;
 }
 
 .testimonios__heading{
@@ -367,3 +367,33 @@ img {
   color: var(--primario);
 }
 
+/*Footer*/
+
+.footer{
+  background-color: #5a30a0;
+  padding: 3rem 0;
+}
+
+@media (min-width: 758px){
+  .footer__grid{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+
+.footer__logo{
+  width: 20rem;
+  margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 768px){
+  .footer__logo{
+    margin: 0;
+  }
+}
+
+.navegacion__link--blanco{
+  color: var(--blanco);
+}
