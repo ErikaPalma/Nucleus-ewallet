@@ -255,3 +255,62 @@ img {
 .caracteristicas__contenido .tarjeta{
   box-shadow: none;
 }
+
+/*Comisiones*/
+
+.comisiones h2{
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.comisiones__heading{
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .comisiones__heading{
+    text-align: left;
+  }
+}
+
+.comisiones__contenido p{
+  font-weight: 500;
+}
+
+@media (min-width: 768px){
+  .comisiones__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 998px){
+  .comisiones__contenido{
+    align-items: center;
+  }
+}
+
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 3rem;
+}
+
+@media (min-width: 768px){
+  .tarjeta{
+    flex-direction: row;
+  }
+  
+}
+
+.tarjeta__porcentaje{
+  font-weight: 900;
+  color: var(--primario);
+  font-size: 4rem;
+}
+
