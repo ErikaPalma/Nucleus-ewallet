@@ -183,6 +183,7 @@ img {
 .nucleus__contenido{
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 768px){
@@ -226,4 +227,31 @@ img {
 .tarjeta__texto{
   margin: 0;
   font-size: 1.8rem;
+}
+
+/*Características*/
+
+.caracteristicas{
+  margin-top: 10rem;
+  background-color: var(--primario);
+  padding: 10rem 0;
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 88%);
+}
+.caracteristicas__heading{
+  text-align: center;
+  padding-bottom: 5rem;
+  color: var(--blanco);
+}
+
+@media (min-width: 768px){
+  .caracteristicas__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.caracteristicas__contenido .tarjeta{
+  box-shadow: none;
 }
