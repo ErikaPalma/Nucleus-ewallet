@@ -167,3 +167,63 @@ img {
     display: inline-block;
   }
 }
+
+/*Nucleus*/
+
+.nucleus{
+  margin-top: 5rem;
+}
+
+.nucleus h2{
+  text-align: center;
+  margin-bottom: 5rem;
+  
+}
+
+.nucleus__contenido{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px){
+  .nucleus__contenido{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+.tarjetas{
+  padding-bottom: 5rem;
+
+}
+
+@media (min-width: 768px){
+  .tarjetas{
+    padding-bottom: 0;
+  }
+}
+
+.tarjeta{
+  background-color: var(--blanco);
+  box-shadow: 0px 0px 7px 1px rgba(168,168,168,1);
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  transition: transform .3s;
+}
+
+.tarjeta:hover{
+  transform: scale(1.1);
+}
+
+.tarjeta__titulo{
+  color: var(--primario);
+  margin: 0;
+  font-size: 3rem;
+}
+
+.tarjeta__texto{
+  margin: 0;
+  font-size: 1.8rem;
+}
